@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #FFFFFF;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60pt;
+  background: #181B24;
+  display: flex;
+  align-items: center;
+  padding-left: 40pt;
+}
+.accent {
+  position: absolute;
+  top: 60pt;
+  left: 0;
+  width: 6pt;
+  height: 345pt;
+  background: #B165FB;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 32pt;
+  font-weight: bold;
+  margin: 0;
+}
+.content {
+  margin: 70pt 25pt 15pt 55pt;
+}
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4pt;
+}
+.card {
+  flex: 0 0 calc(50% - 2pt);
+  background: #F8F9FA;
+  padding: 4pt;
+  border: 1pt solid #E9ECEF;
+}
+.card-icon {
+  font-size: 11pt;
+  margin: 0 0 1pt 0;
+}
+.card-title {
+  color: #40695B;
+  font-size: 9pt;
+  font-weight: bold;
+  margin: 0 0 1pt 0;
+}
+.card-desc {
+  color: #2C2C2C;
+  font-size: 7pt;
+  margin: 0;
+  line-height: 1.0;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Skill 的应用场景</h1>
+</div>
+<div class="accent"></div>
+<div class="content">
+  <div class="grid">
+    <div class="card">
+      <p class="card-icon">📝</p>
+      <p class="card-title">文档创建</p>
+      <p class="card-desc">按照品牌规范创建 PRD、需求文档、用户手册等</p>
+    </div>
+    <div class="card">
+      <p class="card-icon">📊</p>
+      <p class="card-title">数据分析</p>
+      <p class="card-desc">使用特定工作流程分析用户数据、行为指标</p>
+    </div>
+    <div class="card">
+      <p class="card-icon">🎨</p>
+      <p class="card-title">品牌管理</p>
+      <p class="card-desc">确保所有输出符合公司品牌指南和视觉规范</p>
+    </div>
+    <div class="card">
+      <p class="card-icon">🔄</p>
+      <p class="card-title">流程自动化</p>
+      <p class="card-desc">自动化重复性任务，如周报生成、数据汇总</p>
+    </div>
+    <div class="card">
+      <p class="card-icon">💬</p>
+      <p class="card-title">沟通协作</p>
+      <p class="card-desc">生成标准化的邮件、公告、产品更新通知</p>
+    </div>
+    <div class="card">
+      <p class="card-icon">🧪</p>
+      <p class="card-title">测试验证</p>
+      <p class="card-desc">按照测试框架生成测试用例和验证脚本</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

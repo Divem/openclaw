@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #FFFFFF;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60pt;
+  background: #181B24;
+  display: flex;
+  align-items: center;
+  padding-left: 40pt;
+}
+.accent {
+  position: absolute;
+  top: 60pt;
+  left: 0;
+  width: 6pt;
+  height: 345pt;
+  background: #B165FB;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 32pt;
+  font-weight: bold;
+  margin: 0;
+}
+.content {
+  margin: 85pt 30pt 30pt 55pt;
+  display: flex;
+  gap: 15pt;
+}
+.column {
+  flex: 1;
+}
+h2 {
+  color: #40695B;
+  font-size: 14pt;
+  font-weight: bold;
+  margin: 0 0 10pt 0;
+}
+.practice {
+  background: #F8F9FA;
+  padding: 10pt;
+  margin-bottom: 8pt;
+  border-left: 2pt solid #B165FB;
+}
+.practice-title {
+  color: #181B24;
+  font-size: 12pt;
+  font-weight: bold;
+  margin: 0 0 5pt 0;
+}
+.practice-desc {
+  color: #2C2C2C;
+  font-size: 10pt;
+  margin: 0;
+  line-height: 1.2;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>最佳实践</h1>
+</div>
+<div class="accent"></div>
+<div class="content">
+  <div class="column">
+    <h2>✅ 推荐做法</h2>
+    <div class="practice">
+      <p class="practice-title">保持简洁</p>
+      <p class="practice-desc">只包含 Claude 真正需要的上下文，避免冗余信息</p>
+    </div>
+    <div class="practice">
+      <p class="practice-title">提供示例</p>
+      <p class="practice-desc">使用具体示例说明期望的输出格式</p>
+    </div>
+    <div class="practice">
+      <p class="practice-title">模块化设计</p>
+      <p class="practice-desc">每个技能专注单一职责，便于复用和维护</p>
+    </div>
+    <div class="practice">
+      <p class="practice-title">持续迭代</p>
+      <p class="practice-desc">根据使用反馈不断优化指令内容</p>
+    </div>
+  </div>
+  <div class="column">
+    <h2>❌ 避免陷阱</h2>
+    <div class="practice">
+      <p class="practice-title">过度复杂</p>
+      <p class="practice-desc">不要在一个技能中塞入过多功能</p>
+    </div>
+    <div class="practice">
+      <p class="practice-title">缺少约束</p>
+      <p class="practice-desc">明确边界条件，避免 AI 输出偏离需求</p>
+    </div>
+    <div class="practice">
+      <p class="practice-title">忽略测试</p>
+      <p class="practice-desc">务必在实际场景中验证技能效果</p>
+    </div>
+    <div class="practice">
+      <p class="practice-title">一成不变</p>
+      <p class="practice-desc">定期审视和更新技能内容</p>
+    </div>
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+html { background: #ffffff; }
+body {
+  width: 720pt; height: 405pt; margin: 0; padding: 0;
+  background: #FFFFFF;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60pt;
+  background: #181B24;
+  display: flex;
+  align-items: center;
+  padding-left: 40pt;
+}
+.accent {
+  position: absolute;
+  top: 60pt;
+  left: 0;
+  width: 6pt;
+  height: 345pt;
+  background: #B165FB;
+}
+h1 {
+  color: #FFFFFF;
+  font-size: 32pt;
+  font-weight: bold;
+  margin: 0;
+}
+.content {
+  margin: 72pt 30pt 19pt 55pt;
+}
+h2 {
+  color: #181B24;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0 0 3pt 0;
+}
+.code-block {
+  background: #F8F9FA;
+  padding: 5pt;
+  border: 1pt solid #E9ECEF;
+  font-family: 'Courier New', monospace;
+  font-size: 6pt;
+  line-height: 0.8;
+}
+.folder {
+  color: #40695B;
+  font-weight: bold;
+}
+.file {
+  color: #B165FB;
+}
+.required {
+  color: #E53E3E;
+  font-weight: bold;
+}
+.optional {
+  color: #718096;
+}
+p {
+  color: #2C2C2C;
+  font-size: 14pt;
+  margin: 0 0 10pt 0;
+}
+</style>
+</head>
+<body>
+<div class="header">
+  <h1>Skill 的结构</h1>
+</div>
+<div class="accent"></div>
+<div class="content">
+  <h2>文件结构</h2>
+  <div class="code-block">
+    <p><span class="folder">my-skill/</span></p>
+    <p style="padding-left: 20pt;"><span class="required">SKILL.md</span> <span style="color: #718096;">// 必需：指令和元数据</span></p>
+    <p style="padding-left: 20pt;"><span class="optional">scripts/</span> <span style="color: #718096;">// 可选：Python/Bash 脚本</span></p>
+    <p style="padding-left: 20pt;"><span class="optional">references/</span> <span style="color: #718096;">// 可选：参考文档</span></p>
+    <p style="padding-left: 20pt;"><span class="optional">assets/</span> <span style="color: #718096;">// 可选：模板、图标、字体</span></p>
+  </div>
+  <h2 style="margin-top: 20pt;">SKILL.md 格式</h2>
+  <div class="code-block">
+    <p><span class="required">---</span></p>
+    <p><span class="file">name</span>: my-skill-name</p>
+    <p><span class="file">description</span>: 清晰描述技能功能</p>
+    <p><span class="required">---</span></p>
+    <p></p>
+    <p># 技能标题</p>
+    <p>[详细指令内容...]</p>
+  </div>
+</div>
+</body>
+</html>
